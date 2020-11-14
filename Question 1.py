@@ -19,7 +19,7 @@ x1, x2, x3, x4, F = sym.symbols('x1, x2, x3, x4, F')
 # Define φ, equation (3.2a)
 phi = 4 * m * ell * x4**2 * sym.sin(x3) + 4 * F - 3 * m * g * sym.sin(x3) * sym.cos(x3)     # Numerator of (3.2a)
 phi /= 4 * (M + m) - 3 * m * sym.cos(x3)**2     # Denominator of (3.2a)
-#sym.pprint(phi)     # Prints equation (3.2a) in a nice readable way for a human
+
 
 # Define ψ, equation (3.2b)
 psi = -3 * (m * ell * x4**2 * sym.sin(x3) * sym.cos(x3) + F * sym.cos(x3) - (M + m) * g * sym.sin(x3))
